@@ -4,6 +4,7 @@ class HelloWorld extends React.Component {
   render () {
     return (
       <React.Fragment>
+        <h1>Title: {this.props.title}</h1>
         Greeting: {this.props.greeting}
       </React.Fragment>
     );
@@ -11,6 +12,7 @@ class HelloWorld extends React.Component {
 }
 
 HelloWorld.propTypes = {
-  greeting: PropTypes.string
+  greeting: PropTypes.string,
+  title: PropTypes.string
 };
 export default HelloWorld
