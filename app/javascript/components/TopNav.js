@@ -8,13 +8,17 @@ class TopNav extends React.Component {
         <div className="top-nav">
           <div className="container-fluid">
             <div className="row align-items-center">
-              <div className="col-1">
+              <div className="col text-left">
+                <div className="search">
+                  <i className="search-icon fa fa-search"></i>
+                  <input type="text" className="search-input form-control" placeholder="Search"/>
+                </div>
+              </div>
+              <div className="col-1 text-center">
                 <a className="top-nav-logo"><img src={this.props.logo}/></a>
               </div>
               {isLoggedIn ? (
-                <div className="col-11 text-right">
-                  <a className="top-nav-link">Pages</a>
-                  <a className="top-nav-link">People</a>
+                <div className="col text-right">
                   <span className="dropdown user-menu">
                     <span className="user-menu-avatar dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span className="user-menu-name">{this.props.email}</span>
