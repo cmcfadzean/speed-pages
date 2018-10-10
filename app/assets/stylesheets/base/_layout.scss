@@ -1,9 +1,8 @@
+body {
+  background: $color-offset;
+}
 .container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 15px;
   &-fluid {
-    max-width: 100%;
+    padding: 0 25px;
   }
 }

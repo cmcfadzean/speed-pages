@@ -1,0 +1,27 @@
+.user-menu {
+  &-avatar {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    vertical-align: middle;
+    display: inline-block;
+    img {
+      width: 40px;
+      margin-left: 10px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &:after {
+      display: none;
+    }
+  }
+  &-name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &-dropdown {
+    left: auto !important;
+    right: 0 !important;
+    top: 10px !important;
+  }
+}
