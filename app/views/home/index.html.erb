@@ -1,28 +1,9 @@
-<div class="top-nav">
-  <div class="container-fluid">
-    <div class="row align-items-center">
-      <div class="col-2">
-        <a class="top-nav-logo"><%= image_tag("logo.png") %></a>
-      </div>
-      <div class="col-10 text-right">
-        <% if user_signed_in? %>
-        <span class="dropdown user-menu">
-          <span class="user-menu-avatar dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="user-menu-name"><%= current_user.email%></span>
-            <%= image_tag("user.svg") %>
-          </span>
-          <div class="user-menu-dropdown dropdown-menu">
-            <%= link_to "Account", edit_user_registration_path, class: "user-menu-link dropdown-item"%>
-            <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "user-menu-link dropdown-item" %>
-          </div>
-        </span>
-        <% else %>
-          <%= link_to "Sign Up", new_user_registration_path, class: "top-nav-link" %>
-          <%= link_to "Login", new_user_session_path, class: "top-nav-link" %>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
-
-<%= react_component("HelloWorld", { greeting: "Hello from react-rails.", title: "React Here!" }) %>
+<%= react_component("TopNav", {
+  logo: asset_path("logo.png"),
+  isLoggedIn: user_signed_in?,
+  signUp: new_user_registration_path,
+  login: new_user_session_path,
+  email:  current_user ? current_user.email : nil,
+  avatar: asset_path("user.svg"),
+  account: edit_user_registration_path,
+  logout: destroy_user_session_path })%>
