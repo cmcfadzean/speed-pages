@@ -1,9 +1,10 @@
 .top-nav {
   background: #fff;
   padding: 15px 0;
+  box-shadow: rgba(85, 77, 86, 0.1) 0px 2px 4px 0px;
   &-logo {
     display: block;
-    display: inline-block;
+    margin: 0 auto;
     width: 40px;
     line-height: 1;
     img {

@@ -11,7 +11,7 @@ class TopNav extends React.Component {
               <div className="col text-left">
                 <div className="search">
                   <i className="search-icon fa fa-search"></i>
-                  <input type="text" className="search-input form-control" placeholder="Search"/>
+                  <input type="text" className="search-input form-control form-control-sm" placeholder="Search"/>
                 </div>
               </div>
               <div className="col-1 text-center">
@@ -31,7 +31,7 @@ class TopNav extends React.Component {
                   </span>
                 </div>
               ) : (
-                <div className="col-11 text-right">
+                <div className="col text-right">
                   <a href={this.props.signUp} className="top-nav-link">Sign Up</a>
                   <a href={this.props.login} className="top-nav-link">Login</a>
                 </div>
