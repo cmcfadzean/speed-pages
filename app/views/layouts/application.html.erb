@@ -21,7 +21,9 @@
     account: edit_user_registration_path,
     logout: destroy_user_session_path })%>
 
-  <%= yield %>
+  <div class="stage">
+    <%= yield %>
+  </div>
 
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
