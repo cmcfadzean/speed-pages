@@ -8,8 +8,17 @@ class TopNav extends React.Component {
         <div className="top-nav">
           <div className="container-fluid">
             <div className="row align-items-center">
-              <div className="col-1 text-center">
+              <div className="col-2">
                 <a className="top-nav-logo"><img src={this.props.logo}/></a>
+              </div>
+              <div className="col-2 text-right d-md-none d-lg-none d-xl-none">
+                <a className="top-nav-link active"><i className="top-nav-icon fa fa-tachometer"></i></a>
+              </div>
+              <div className="col-2 text-right d-md-none d-lg-none d-xl-none">
+                <a className="top-nav-link"><i className="top-nav-icon fa fa-tachometer"></i></a>
+              </div>
+              <div className="col-2 text-right d-md-none d-lg-none d-xl-none">
+                <a className="top-nav-link"><i className="top-nav-icon fa fa-tachometer"></i></a>
               </div>
               {isLoggedIn ? (
                 <div className="col text-right">
