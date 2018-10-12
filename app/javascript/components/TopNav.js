@@ -8,12 +8,6 @@ class TopNav extends React.Component {
         <div className="top-nav">
           <div className="container-fluid">
             <div className="row align-items-center">
-              <div className="col text-left">
-                <div className="search">
-                  <i className="search-icon fa fa-search"></i>
-                  <input type="text" className="search-input form-control form-control-sm" placeholder="Search"/>
-                </div>
-              </div>
               <div className="col-1 text-center">
                 <a className="top-nav-logo"><img src={this.props.logo}/></a>
               </div>
@@ -21,7 +15,7 @@ class TopNav extends React.Component {
                 <div className="col text-right">
                   <span className="dropdown user-menu">
                     <span className="user-menu-avatar dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span className="user-menu-name">{this.props.email}</span>
+                      <span className="user-menu-name d-none d-sm-none d-md-inline-block">{this.props.email}</span>
                       <img src={this.props.avatar}/>
                     </span>
                     <div className="user-menu-dropdown dropdown-menu">

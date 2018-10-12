@@ -1,24 +1,33 @@
 .main-nav {
-  border-right: 1px solid #d7d7d7  ;
+  max-width: 150px;
+  border-right: 1px solid $color-light;
   text-align: center;
   padding: 50px 0;
-  &-col {
-    max-width: 200px;
-  }
   &-item {
     display: block;
     padding: 50px 0;
+    border-right: 2px solid $color-offset;
     &.active {
-      border-right: 3px solid $color-primary;
-      transform: translateX(3px);
-      .main-nav {
-        &-icon {
+      border-right: 2px solid $color-primary;
+      .main-nav-icon {
+        color: $color-primary;
+      }
+      &:hover {
+        border-right: 2px solid $color-primary;
+        .main-nav-icon {
           color: $color-primary;
         }
+      }
+    }
+    &:hover {
+      border-right: 2px solid $color-light;
+      .main-nav-icon {
+        color: $color-dark;
       }
     }
   }
   &-icon {
     font-size: 35px;
+    color: $color-default;
   }
 }

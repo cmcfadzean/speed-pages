@@ -1,0 +1,21 @@
+.main-stats {
+  background: #fff;
+  max-width: 500px;
+  padding: 0;
+  &-bar {
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+    background: $color-dark;
+  }
+  &-count {
+    color: #fff;
+    margin-bottom: 2px;
+  }
+  &-title {
+    color: $color-primary;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

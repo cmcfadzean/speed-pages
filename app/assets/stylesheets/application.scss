@@ -3,7 +3,10 @@
 @import "base/typography";
 @import "base/layout";
 
+@import "components/main_content";
 @import "components/main_nav";
+@import "components/main_stats";
+@import "components/page";
 @import "components/search";
 @import "components/stage";
 @import "components/top_nav";
