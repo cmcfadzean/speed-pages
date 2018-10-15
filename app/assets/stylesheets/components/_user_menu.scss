@@ -6,12 +6,14 @@
     font-weight: 600;
     vertical-align: middle;
     display: inline-block;
-    margin-left: 50px;
     img {
-      width: 40px;
-      margin-left: 10px;
+      opacity: .4;
+      width: 30px;
       display: inline-block;
       vertical-align: middle;
+      &:hover {
+        opacity: 1;
+      }
     }
     &:after {
       display: none;

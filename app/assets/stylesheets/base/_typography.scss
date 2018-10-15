@@ -7,3 +7,9 @@ body {
   text-size-adjust: 100%;
   font-family: $font-family;
 }
+a {
+  &:hover {
+    text-decoration: none;
+    color: $color-primary1;
+  }
+}

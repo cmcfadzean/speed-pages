@@ -2,9 +2,9 @@ html,
 body {
 	height: 100%;
   background: $color-offset;
-}
-.container {
-  &-fluid {
-    padding: 0 20px;
-  }
+	> div {
+    flex: 1 1 auto!important;
+		display: flex;
+		flex-direction: column;
+	}
 }
