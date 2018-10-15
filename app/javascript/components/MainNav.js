@@ -9,8 +9,8 @@ class MainNav extends React.Component {
           <div className="main-nav-top"><img className="main-nav-logo" src={this.props.logo}/></div>
           <div className="main-nav-middle">
             <a href="#" className="main-nav-link active"><i className="main-nav-icon fa fa-tachometer"></i></a>
-            <a href="#" className="main-nav-link active"><i className="main-nav-icon fa fa-tachometer"></i></a>
-            <a href="#" className="main-nav-link active"><i className="main-nav-icon fa fa-tachometer"></i></a>
+            <a href="#" className="main-nav-link"><i className="main-nav-icon fa fa-laptop"></i></a>
+            <a href="#" className="main-nav-link"><i className="main-nav-icon fa fa-user"></i></a>
           </div>
           <div className="main-nav-bottom">
             <span className="dropdown user-menu">
