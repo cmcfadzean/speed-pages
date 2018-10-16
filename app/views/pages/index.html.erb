@@ -1,0 +1,9 @@
+<div class="main-list col flex-fill">
+  <%= render "page_listing", pages: @pages %>
+  <%= link_to new_page_path, class: "main-list-add" do %>
+    <i class="fa fa-plus"></i>
+  <% end %>
+</div>
+<div class="main-content col flex-fill">
+  <h1 class="main-content-title">Pages</h1>
+</div>

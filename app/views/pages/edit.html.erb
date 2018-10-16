@@ -1,0 +1,10 @@
+<div class="main-list col flex-fill">
+  <%= render "page_listing", pages: @pages %>
+  <%= link_to pages_path, class: "main-list-close" do %>
+    <i class="fa fa-close"></i>
+  <% end %>
+</div>
+<div class="main-content col flex-fill">
+  <h1 class="main-content-title">Edit Page</h1>
+  <%= render 'form' %>
+</div>
