@@ -1,26 +1,5 @@
 <div class="main-list col flex-fill">
-  <div class="main-list-scroller">
-    <% @pages.each do |page| %>
-      <div class="card">
-        <div class="card-status">
-          <i class="card-status-icon <%= page.status %>"></i>
-        </div>
-        <div class="card-details">
-          <p class="card-title">
-            <%= page.title %>
-          </p>
-        </div>
-        <div class="card-actions">
-          <%= link_to edit_page_path(page), class: "card-action" do %>
-            <i class="fa fa-pencil"></i>
-          <% end %>
-          <%= link_to page, method: :delete, data: { confirm: 'Are you sure?' }, class: "card-action" do %>
-            <i class="fa fa-close"></i>
-          <% end %>
-        </div>
-      </div>
-    <% end %>
-  </div>
+  <%= render "page_listing", pages: @pages %>
   <%= link_to new_page_path, class: "main-list-add" do %>
     <i class="fa fa-plus"></i>
   <% end %>

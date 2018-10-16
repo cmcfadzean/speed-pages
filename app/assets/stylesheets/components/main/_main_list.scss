@@ -7,7 +7,7 @@
     padding: 20px 30px;
     overflow-y: auto;
   }
-  &-add {
+  &-add, &-close {
     @include simple-ease(all);
     z-index: 999;
     bottom: 30px;
@@ -18,7 +18,6 @@
     display: inline-block;
     height: 50px;
     width: 50px;
-    background: $color-primary1;
     color: #fff;
     i {
       margin-top: -2px;
@@ -30,11 +29,22 @@
     }
     &:hover {
       color: #fff;
-      background: $color-primary2;
       width: 54px;
       height: 54px;
       right: -27px;
       bottom: 28px;
+    }
+  }
+  &-add {
+    background: $color-primary1;
+    &:hover {
+      background: $color-primary2;
+    }
+  }
+  &-close {
+    background: $color-primary2;
+    &:hover {
+      background: $color-primary1;
     }
   }
 }

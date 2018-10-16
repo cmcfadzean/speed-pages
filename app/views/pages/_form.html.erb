@@ -11,21 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+  <div class="form-group">
+    <%= f.label :title, class: "form-label" %><br>
+    <%= f.text_field :title, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :url %><br>
-    <%= f.text_field :url %>
+  <div class="form-group">
+    <%= f.label :url, class: "form-label" %><br>
+    <%= f.text_field :url, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :status %><br>
     <%= f.check_box :status %>
   </div>
-  <div class="field">
-    <%= f.hidden_field :user, value: current_user.id %>
-  </div>
+  <%= f.hidden_field :user, value: current_user.id %>
   <div class="actions">
     <%= f.submit %>
   </div>
